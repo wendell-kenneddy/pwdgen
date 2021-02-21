@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html" charset="utf-8">
+  <meta http-equiv="content-type" content="text/css" charset="utf-8">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="content-type" content="text/javascript" charset="utf-8">
+  <meta name="author" content="Wendell Kenneddy">
+  <meta name="creator" content="Wendell Kenneddy">
+  <meta name="description"
+    content="Gere gratuitamente uma senha apenas ao apertar um botão.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PWDgen">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="./.github/final-result.png">
+  <title>PWDGen</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Ubuntu:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" rel="stylesheet">
+  <script src="./main.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+
+<body>
+  <header id="page-header" role="banner">
+    <h1>PWDgen</h1>
+  </header>
+
+  <main role="main">
+    <section>
+      <h2>Como funciona?</h2>
+
+      <p>Utilize um dos botões abaixo para gerar uma senha composta somente por
+        números, ou números e letras.</p>
+
+      <p>Pressionar a tecla <kbd>ArrowLeft</kbd> (seta para a esquerda) irá
+        gerar uma senha somente de números, e pressionar a tecla
+        <kbd>ArrowRight</kbd> (seta para a direita) irá gerar uma senha de
+        letras e números.
+      </p>
+
+      <div class="btn-and-result">
+        <button name="somente-numeros" id="only-num"
+          title="Gerar uma senha composta somente de números.">Somente
+          números</button>
+        <div class="result">
+          <p id="result">A senha aparecerá aqui.</p>
+        </div>
+        <button name="numeros-e-letras" id="num-and-letter"
+          id="Gerar uma senha composta por letras e números.">Números e
+          letras</button>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+
+</html>

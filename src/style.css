@@ -1,0 +1,149 @@
+/* Global =========================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #fff;
+
+  font-family: 'Roboto', monospace, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  letter-spacing: 1.3px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+button {
+  background-color: #0d2f81;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #0061ff;
+}
+
+kbd {
+  background-color: #cecece;
+  border: none;
+  border-radius: 2px;
+  padding: 0 5px;
+}
+
+/* Header =========================*/
+  #page-header {
+    background-color: #0d2f81;
+    padding: 15px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    color: #fff;
+  }
+/* Main =========================*/
+
+main {
+  padding: 30px 15px 15px 15px;
+}
+
+main section {
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 800px;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+main section p {
+  text-align: justify;
+}
+
+main section .result {
+  border: 1px solid #0d2f81;
+  border-radius: 4px;
+  padding: 0 10px;
+  width: 60%;
+  box-sizing: border-box;
+}
+
+main section p#result {
+  text-align: center;
+}
+
+/* Buttons =========================*/
+
+.btn-and-result {
+  width: 100%;
+  display: flex;
+  align-content: space-evenly;
+  justify-content: space-between;
+}
+
+/* Footer =========================*/
+
+#page-footer {
+  background-color: #000;
+  padding: 15px;
+  color: #fff;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+@media (max-width: 850px) {
+
+  button {
+    padding: 15px 10px;
+  }
+
+  .btn-and-result {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+     "button1 button2"
+     "result result"
+    ;
+    gap: 10px;
+  }
+
+  #only-num {
+    grid-area: button1;
+  }
+
+  #num-and-letter {
+    grid-area: button2;
+  }
+
+  .result {
+    grid-area: result;
+    width: 100% !important;
+  }
+}
